@@ -74,7 +74,7 @@ Since we only have the domain name to work with, the next logical step is to do 
 From the blogpost, we learnt that there are 3 anti-spoofing mechanisms built into DNS.
 1. Sender Policy Framework (SPF) which helps to detect emails with spoofed sender addresses from an unauthorized email server.
 2. DomainKeys Identified Mail (DKIM) which allows parts of the emails to be cryptographically signed and thereafter verified by the recipient email server.
-3. DDomain-based Message Authentication Reporting and Conformance (DMARC) which specifies a policy on what to do with emails that failed the SPF or DKIM checks. 
+3. Domain-based Message Authentication Reporting and Conformance (DMARC) which specifies a policy on what to do with emails that failed the SPF or DKIM checks. 
 
 Doing a DNS TXT record lookup on `kono-girudo.com`, we get the following result with the SPF record.
 ```
