@@ -111,7 +111,7 @@ For SPF policy, there are 3 options on what to do with emails coming from unauth
 
 However, there are no defined protocols on what actions are to be taken with spoofed emails. This means that different email providers may treat soft fail emails differently. In the case of `kono-girudo.com`, it has a soft fail policy, which means the email may be sent to spam, undelivered at all, or even successfully delivered to the recipient's inbox!
 
-For DMARC policy, there are again 3 options on what to do with emails failing SPF or DMARC check.
+For DMARC policy, there are again 3 options on what to do with emails failing SPF or DKIM checks.
 
 1. Do nothing (`p=none`)
 2. Send to spam (`p=quarantine`)
